@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "074cf86d-be42-4ab7-836f-da0b6fa11b4a",
+		"name": "ev_periodica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create  phone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"brand\":\"Apple\",\r\n    \"color\":\"Gray\",\r\n    \"price\":\"5000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/phones/create/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Read phone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Read all phones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/phones/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update phone",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8080/phones/"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete phone",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/phones/delete/4"
+			},
+			"response": []
+		}
+	]
+}
